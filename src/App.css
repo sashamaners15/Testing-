@@ -1,0 +1,61 @@
+.App {
+  position: absolute;
+  text-align: center;
+  color: white;
+}
+
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(5px + 2vmin);
+  font-weight: 400;
+  color: #ffffff77;
+  background-image: linear-gradient(to right, #505050, #292929);
+  background-size: 200% 200%;
+  animation: Gradient-animation 10s ease infinite;
+  
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes Gradient-animation {
+  0% {
+    background-position: 0 50%;
+    transform: rotate(0deg);
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+@keyframes Loading-screen-appearance {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1
+  }
+}
+
+.Loading-screen-appearance-class {
+  animation: Loading-screen-appearance 2s ease;
+}
